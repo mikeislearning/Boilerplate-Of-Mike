@@ -32,8 +32,8 @@ paths =
     destination: DESTINATION + '/js/'
     filename: 'bundle.js'
   templates:
-    source: SOURCE + '*.html'
-    watch:  SOURCE + '*.html'
+    source: SOURCE + 'templates/*.html'
+    watch:  SOURCE + 'templates/*.html'
     destination: DESTINATION
   styles:
     source: SOURCE + 'stylus/style.styl'
@@ -93,8 +93,8 @@ gulp.task 'scripts', () ->
 gulp.task 'templates', ->
   pipeline = gulp
     .src paths.templates.source
-    .pipe(jade(pretty: not production))
-    .on 'error', handleError
+    # .pipe(jade(pretty: not production))
+    # .on 'error', handleError
     .pipe gulp.dest paths.templates.destination
 
   pipeline = pipeline.pipe livereload(auto: false) unless production
