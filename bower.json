@@ -1,0 +1,29 @@
+{
+  "name": "Website name",
+  "version": "0.0.0",
+  "authors": [
+    "Michael MacPherson <mike@onemethod.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "2.*",
+    "modernizr": "*",
+    "underscore": "*",
+    "backbone": "*",
+    "jquery.cookie": "*",
+    "jquery.validation": "*",
+    "jquery-placeholder": "*",
+    "fastclick": "*",
+    "foundation":"*",
+    "marionette" :"*"
+    // ,"react":"*"
+
+  }
+}

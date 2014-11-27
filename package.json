@@ -1,0 +1,41 @@
+{
+  "name": "Kitkat-nfl",
+  "version": "0.0.0",
+  "description": "Kitkat NFL Promo Site",
+  "main": "gulpfile.coffee",
+  "keywords": [
+    "gulp",
+    "template"
+  ],
+  "author": "Michael MacPherson",
+  "dependencies": {},
+  "devDependencies": {
+    "coffee-script": "*",
+    "ecstatic": "*",
+    "event-stream": "*",
+    "exec": "*",
+    "gulp": "*",
+    "gulp-autoprefixer": "*",
+    "gulp-clean": "*",
+    "gulp-coffee": "*",
+    "gulp-concat": "*",
+    "gulp-imagemin": "*",
+    "gulp-jade": "*",
+    "gulp-livereload": "*",
+    "gulp-load-plugins": "*",
+    "gulp-minify-css": "*",
+    "gulp-nodemon": "*",
+    "gulp-rename": "*",
+    "gulp-streamify": "*",
+    "gulp-stylus": "*",
+    "gulp-uglify": "*",
+    "gulp-util": "*",
+    "imagemin-pngcrush": "*",
+    "jade": "*",
+    "jeet": "*",
+    "main-bower-files": "*",
+    "nib": "*",
+    "tiny-lr": "*",
+    "gulp-jade-php": "*"
+  }
+}
