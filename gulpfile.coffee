@@ -38,7 +38,7 @@ paths =
     destination: DESTINATION
   styles:
     source: SOURCE + 'stylus/style.styl'
-    watch: SOURCE + 'stylus/*.styl'
+    watch: SOURCE + 'stylus/**/*.styl'
     destination: DESTINATION + '/css/'
   images:
     source: SOURCE + 'img/**/*.*'
