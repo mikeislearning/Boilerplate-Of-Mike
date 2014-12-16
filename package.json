@@ -26,6 +26,7 @@
     "gulp-minify-css": "*",
     "gulp-nodemon": "*",
     "gulp-rename": "*",
+    "gulp-sourcemaps":"*",
     "gulp-streamify": "*",
     "gulp-stylus": "*",
     "gulp-uglify": "*",

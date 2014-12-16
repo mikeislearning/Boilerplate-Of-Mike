@@ -104,7 +104,7 @@ gulp.task 'scripts', () ->
 
   # Define
   libs    = gulp.src(bower())
-  main    = gulp.src(paths.scripts.source).pipe(plugins.coffee( bare: true ))
+  main    = gulp.src(paths.scripts.source).pipe(plugins.sourcemaps.init()).pipe(plugins.coffee( bare: true ))
 
   # Create Libs
   es.concat(libs)
@@ -117,6 +117,7 @@ gulp.task 'scripts', () ->
   main
     .pipe(plugins.concat('main.min.js'))
     .pipe(plugins.uglify())
+    .pipe(plugins.sourcemaps.write())
     .on('error', errorHandler)
     .pipe(gulp.dest(paths.scripts.destination))
     .pipe(plugins.livereload(reloadServer))
