@@ -1,0 +1,47 @@
+var dest = "./build";
+var src = './src';
+
+module.exports = {
+  browserSync: {
+    server: {
+      // Serve up our build folder
+      baseDir: dest
+    }
+  },
+  stylus: {
+  	src: src + "/stylus/*.stylus",
+  	dest: dest
+  },
+  images: {
+    src: src + "/images/**",
+    dest: dest + "/images"
+  },
+  markup: {
+    src: src + "/htdocs/**",
+    dest: dest
+  },
+  browserify: {
+    // A separate bundle will be generated for each
+    // bundle config in the list below
+    bundleConfigs: [{
+      entries: src + '/coffee/global.coffee',
+      dest: dest,
+      outputName: 'global.js',
+      // Additional file extentions to make optional
+      extensions: ['.coffee', '.hbs'],
+      // list of modules to make require-able externally
+      require: ['jquery', 'underscore']
+    }, {
+      entries: src + '/coffee/page.js',
+      dest: dest,
+      outputName: 'page.js',
+      // list of externally available modules to exclude from the bundle
+      external: ['jquery', 'underscore']
+    }]
+  },
+  production: {
+    cssSrc: dest + '/*.css',
+    jsSrc: dest + '/*.js',
+    dest: dest
+  }
+};
