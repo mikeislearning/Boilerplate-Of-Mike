@@ -2,6 +2,8 @@ _          = require 'underscore'
 Backbone   = require 'backbone'
 Backbone.$ = require 'jquery'
 
+
+
 class View extends Backbone.View
 
   template: require '../templates/template'
