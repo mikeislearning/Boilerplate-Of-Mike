@@ -9,7 +9,7 @@ module.exports = {
     }
   },
   stylus: {
-  	src: src + "/stylus/*.stylus",
+  	src: src + "/stylus/app.stylus",
   	dest: dest
   },
   images: {
@@ -24,7 +24,7 @@ module.exports = {
     // A separate bundle will be generated for each
     // bundle config in the list below
     bundleConfigs: [{
-      entries: src + '/coffee/global.coffee',
+      entries: src + '/scripts/coffee/global.coffee',
       dest: dest,
       outputName: 'global.js',
       // Additional file extentions to make optional
@@ -32,7 +32,7 @@ module.exports = {
       // list of modules to make require-able externally
       require: ['jquery', 'underscore']
     }, {
-      entries: src + '/coffee/page.js',
+      // entries: src + '/scripts/coffee/page.js',
       dest: dest,
       outputName: 'page.js',
       // list of externally available modules to exclude from the bundle
