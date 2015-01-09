@@ -23,7 +23,6 @@
     "fastclick": "*",
     "foundation":"*",
     "marionette" :"*"
-    // ,"react":"*"
 
   }
 }
