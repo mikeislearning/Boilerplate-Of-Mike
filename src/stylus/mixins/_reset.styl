@@ -1,0 +1,113 @@
+//- --------------------------------------------------------
+//- Reset
+//- --------------------------------------------------------
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+@import url('//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800')
+
+*, *:before, *:after
+  box-sizing: border-box
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+audio, canvas, video
+  display: inline-block
+
+html, body
+  font-family: $baseFontFamily
+  font-size: $baseFontSize
+  line-height: $baseLineHeight
+  height: auto
+  width: auto
+  padding: 0
+  margin: 0
+  display: flex
+  flex-direction: column
+  box-align: center
+
+a
+  color: $baseColor
+  text-decoration: none
+
+// a:hover,
+// a:visited,
+// a:active
+//   color: $baseColor
+
+a:focus
+  outline: thin dotted
+
+a:active, a:hover
+  outline: 0
+
+h1, h2, h3, h4, h5, h6, p
+  line-height: $baseLineHeight
+
+  // margin-bottom: $baseMargin
+
+h1, h2, h3, h4, h5, h6
+  font-weight: 400
+  // color: $accentColor
+
+h1
+  font-size: 48px
+
+h2
+  font-size: 24px
+
+h3
+  font-size: 22px
+
+h4
+  font-size: 18px
+
+h5
+  font-size: 16px
+
+h6
+  font-size: 14px
